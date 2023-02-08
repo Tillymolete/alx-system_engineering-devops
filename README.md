@@ -1,1 +1,1 @@
-Shows changing work directory
+Changing work directory
