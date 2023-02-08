@@ -1,1 +1,1 @@
-Changing to user home directory
+shows content in long format
