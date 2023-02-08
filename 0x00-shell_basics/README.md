@@ -1,1 +1,1 @@
-Show all files
+display current contents
