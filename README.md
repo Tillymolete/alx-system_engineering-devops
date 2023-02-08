@@ -1,1 +1,1 @@
-Prints the path name of the current working directory
+shows list of files in the directory
