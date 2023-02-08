@@ -1,1 +1,1 @@
-Shows how to change working directory to user home directory
+Shows changing work directory
