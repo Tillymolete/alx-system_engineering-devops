@@ -1,1 +1,1 @@
-copying all files in html
+moving files that begin with capital letters
