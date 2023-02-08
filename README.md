@@ -1,1 +1,1 @@
-moving file to directory
+delete file in directory
