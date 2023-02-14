@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'obase2 : ibase10' | bc
+echo 'obase2:ibase10' | bc
