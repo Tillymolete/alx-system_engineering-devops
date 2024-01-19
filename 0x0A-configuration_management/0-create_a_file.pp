@@ -1,8 +1,10 @@
-#create /tmp/school files with specified requirements
-file {'/tmp/holberton':
-  ensure  => 'file',
-  content => 'I love Puppet',
+# Puppet manifest to create a file in /tmp
+
+file {'/tmp/school':
+  ensure  => file,
+  path    => '/tmp/school',
+  mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
-  mode    =>  '0744',
+  content => 'I love Puppet'
 }
