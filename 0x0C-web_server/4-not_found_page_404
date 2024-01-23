@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script that installs nginx on a remote server
+
+apt-get -y update
+apt-get -y install nginx
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Ceci n'est pas une page" > /var/www/html/404.html
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://intranet.alxswe.com/ permanent;\n\n\terror_page 404 /404.html;\n\tlocation = /404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}' /etc/nginx/sites-available/default
+service nginx start
