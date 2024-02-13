@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A bash script that configures the container
+
+chmod 777 /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+chown -R nginx:nginx /etc/nginx/
+pkill apache2
+sudo -u nginx service nginx restart
